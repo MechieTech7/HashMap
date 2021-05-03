@@ -1,0 +1,41 @@
+package firstProject;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class SuperMarket
+{
+
+	public static void main(String[] args)
+	{
+		
+		String c;
+		HashMap<String,String> a = new HashMap<String,String>();
+		a.put("Lokesh","DELL");
+		a.put("Anu","MAC");
+		a.put("Theju","DELL");
+		a.put("Vicky","HP");
+		a.put("Nive","LENOVO");
+		a.put("Abi","VIVOBOOK");
+		a.put("Karthi","VAIO");
+		a.put("Hemmy","ASUS");
+		a.put("Vel","MICROSOFT");
+		a.put("Jaashu","SAMSUNG");
+		
+		Scanner b = new Scanner (System.in);
+		
+		String s1="y";
+		String s2="Y";
+		do
+		{
+			System.out.println("enter name:\t");
+			String str=b.nextLine();
+			System.out.println(a.get(str));
+			System.out.println("do you want to continue(y/n):\t");
+			c= b.nextLine();
+		}while(c.equals(s1)||c.equals(s2));
+		
+		b.close();
+		
+		}
+
+	}
